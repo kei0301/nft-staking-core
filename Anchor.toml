@@ -1,0 +1,16 @@
+[programs.localnet]
+j_nft_staking = "3YiBLWJFZt94mshvr8Kb6zvxfCu4D5rVZUyFpMVyEhJ4"
+[programs.devnet]
+j_nft_staking = "3YiBLWJFZt94mshvr8Kb6zvxfCu4D5rVZUyFpMVyEhJ4"
+[programs.mainnet]
+j_nft_staking = "72DPSeKRFpnz6qaQByKkq3NnLYRw37His4QTJBoH4xDN" 
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"

@@ -1,0 +1,1 @@
+for i in {1..40}; do yarn deposit_reward_token 9000000; done

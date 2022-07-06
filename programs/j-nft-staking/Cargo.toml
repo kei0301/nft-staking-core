@@ -1,0 +1,28 @@
+[package]
+name = "j-nft-staking"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "j_nft_staking"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.22.1"
+anchor-spl = "0.22.1"
+solana-program = "1.10.2"
+
+[dependencies.metaplex-token-metadata]
+version = "0.0.1"
+features = ["no-entrypoint"]
+
+[dependencies.spl-token]
+version = "3.3.0"
+features = ["no-entrypoint"]
